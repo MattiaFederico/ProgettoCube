@@ -1,0 +1,11 @@
+#dollar{
+  width: 30px;
+  background-color: lightgray;
+  font-size: 25px;
+}
+
+#counter{
+  background-color: lightgray;
+  padding: 10px;
+  margin: 0;
+}
