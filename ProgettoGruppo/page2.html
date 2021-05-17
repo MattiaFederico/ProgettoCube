@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+  <title>Document</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Progetto 1</a>
+      <div id="navbarNavAltMarkup">
+        <div class="navbar-nav flex-row">
+          <a class="nav-link mx-2" aria-current="page" href="index.html">Home</a>
+          <a class="nav-link mx-2" href="page2.html">Page2</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-6">
+        <div class="form-group">
+          <label>Inserire un numero compreso tra 1 e 100</label>
+          <input type="number" class="form-control my-2" id="inputNum">
+          <button id="btnCreate" class="btn btn-dark my-2">Crea</button>
+          <button id="btnDelete" class="btn btn-danger my-2 mx-2">Cancella</button>
+        </div>
+        <div class="mt-4" id="contentFromApi"></div>
+      </div>
+      <div class="col-6">
+
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/page2.js"></script>
+</body>
+</html>
