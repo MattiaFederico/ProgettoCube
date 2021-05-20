@@ -11,7 +11,6 @@ var counter = document.getElementById("counter");
 
 function updateTip(){
   counter.innerHTML = range.value + "%";
-  console.log(range.value)
 }
 
 function results(){
@@ -21,6 +20,15 @@ function results(){
 }
 
 // Aggiorna il valore della barra e mostra il risultato
+bill.addEventListener( "keypress", (e) => {
+  if( e.key === "Enter" ){
+    updateTip();
+    if( bill.value != "" ){
+      results();
+    }
+  }
+});
+
 range.oninput = () => {
   updateTip();
   if( bill.value != "" ){
